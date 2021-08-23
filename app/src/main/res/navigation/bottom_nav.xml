@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/userFragment">
+
+    <fragment
+        android:id="@+id/favRecipesFragment"
+        android:name="com.uc3m.searchyourrecipe.views.FavRecipesFragment"
+        android:label="My Recipes"
+        tools:layout="@layout/fragment_shopping_list">
+        <action
+            android:id="@+id/action_favRecipesFragment_to_recipeFragment"
+            app:destination="@id/recipeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.uc3m.searchyourrecipe.views.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_recipeFragment"
+            app:destination="@id/recipeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/shoppingListFragmentBis"
+        android:name="com.uc3m.searchyourrecipe.views.ShoppingListFragment"
+        android:label="Shopping List"
+        tools:layout="@layout/fragment_shopping_list" >
+        <action
+            android:id="@+id/action_shoppingListFragmentBis_to_new_ingredient"
+            app:destination="@id/NewIngredient" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.uc3m.searchyourrecipe.views.UserFragment"
+        android:label="User"
+        tools:layout="@layout/fragment_user">
+        <action
+            android:id="@+id/action_userFragment_to_healthDataFragment"
+            app:destination="@id/healthDataFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/recipeFragment"
+        android:name="com.uc3m.searchyourrecipe.views.RecipeFragment"
+        android:label="Recipe's Details"
+        tools:layout="@layout/fragment_recipe">
+        <argument
+            android:name="id"
+            app:argType="string" />
+        <argument
+            android:name="source"
+            app:argType="string" />
+        <argument
+            android:name="recipe"
+            app:argType="com.uc3m.searchyourrecipe.models.Recipe"
+            app:nullable="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/NewIngredient"
+        android:name="com.uc3m.searchyourrecipe.views.NewIngredientFragment"
+        android:label="New Ingredient"
+        tools:layout="@layout/fragment_new_ingredient" >
+        <action
+            android:id="@+id/action_newIngredient_to_shoppingListFragmentBis"
+            app:destination="@id/shoppingListFragmentBis" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/healthDataFragment"
+        android:name="com.uc3m.searchyourrecipe.views.HealthDataFragment"
+        android:label="Health Data"
+        tools:layout="@layout/fragment_health_data" >
+        <action
+            android:id="@+id/action_healthDataFragment_to_editHealthDataFragment"
+            app:destination="@id/editHealthDataFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editHealthDataFragment"
+        android:name="com.uc3m.searchyourrecipe.views.EditHealthDataFragment"
+        android:label="Edit Health Data"
+        tools:layout="@layout/fragment_edit_health_data" >
+        <action
+            android:id="@+id/action_editHealthDataFragment_to_healthDataFragment"
+            app:destination="@id/healthDataFragment" />
+    </fragment>
+</navigation>

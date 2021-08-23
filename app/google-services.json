@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "194820964546",
+    "project_id": "searh-your-recipe",
+    "storage_bucket": "searh-your-recipe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194820964546:android:e3c01715b905fb522dfb5b",
+        "android_client_info": {
+          "package_name": "com.uc3m.searchyourrecipe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "194820964546-vmrr22d4sj867m58dgfbtsdhgn1dpafn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoAoUizk8qoWxC6qt3YFdDW3jJs9UH4Z4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "194820964546-vmrr22d4sj867m58dgfbtsdhgn1dpafn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted = "false">
+        <domain includeSubdomains = "true">
+            api.edamam.com
+        </domain>
+        <pin-set>
+            <pin digest="SHA-256">UfOJLsqvGfMx0qopRv8ecI/MKkpY/M8BjKD7XRAVCsU=</pin>
+        </pin-set>
+    </domain-config>
+</network-security-config>

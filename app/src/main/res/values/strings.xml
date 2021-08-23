@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Search Your Recipe</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ingedientName">ingredientName</string>
+    <string name="nombre_input">Name Ingredient</string>
+    <string name="ingredient">Ingredient</string>
+    <string name="deleteIngredient">X</string>
+    <string name="noRecipesSearch">Search any recipe you would like to cook!</string>
+    <string name="emptySearch">There are no recipes for your search, try again!</string>
+    <string name="noRecipesFaved">Start saving recipes!</string>
+    <string name="title_recipe">TITLE RECIPE</string>
+    <string name="save_ingredients">SAVE INGREDIENTS</string>
+    <string name="visit_web">VISIT WEB</string>
+    <string name="ingredients_title_recipe">INGREDIENTS</string>
+    <string name="health_stats_title_recipe">HEALTH STATS</string>
+    <string name="imc">IMC:</string>
+    <string name="edit_health_data">edit</string>
+    <string name="age_health_data">Age:</string>
+    <string name="weight_health_data">Weight:</string>
+    <string name="height_health_data">Height:</string>
+    <string name="user">User</string>
+
+</resources>
